@@ -15,7 +15,8 @@ int32_t main(int32_t const argc, char *const argv[argc])
 {
     if (argc != 4)
     {
-        printf("Wrong number of arguments.\n");
+        printf("Wrong number of arguments received=%u expected=%u.\n", argc,
+               4U);
         print_usage(argv[0U]);
         return EXIT_FAILURE;
     }
